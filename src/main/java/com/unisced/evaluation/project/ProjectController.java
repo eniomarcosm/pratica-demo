@@ -1,5 +1,6 @@
 package com.unisced.evaluation.project;
 
+import io.swagger.v3.oas.annotations.Operation;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -14,6 +15,7 @@ public class ProjectController {
 
     private final ProjectService projectService;
 
+    @Operation(summary = "Cadastrar de Projecto")
     @PostMapping
     public ResponseEntity<?> save(
             @RequestBody ProjectRequest request
@@ -23,11 +25,13 @@ public class ProjectController {
         return ResponseEntity.accepted().build();
     }
 
+    @Operation(summary = "Listar todos projectos")
     @GetMapping
     public ResponseEntity<List<Project>> findAllProjects(){
         return ResponseEntity.ok(projectService.findAll());
     }
 
+    @Operation(summary = "Pesquisar projecto por Id")
     @GetMapping("/{id}")
     public ResponseEntity<Project> findProjectById(@PathVariable Integer id) {
         Optional<Project> project = projectService.findById(id);
@@ -35,6 +39,7 @@ public class ProjectController {
                 .orElse(ResponseEntity.notFound().build());
     }
 
+    @Operation(summary = "Actualizar projecto")
     @PutMapping("/{id}")
     public ResponseEntity<?> updateProject(@PathVariable Integer id, @RequestBody ProjectRequest request) {
         Optional<Project> existingProject = projectService.findById(id);
@@ -46,6 +51,7 @@ public class ProjectController {
         }
     }
 
+    @Operation(summary = "Eliminar projecto através do Id")
     @DeleteMapping("/{id}")
     public ResponseEntity<?> deleteProject(@PathVariable Integer id) {
         Optional<Project> existingProject = projectService.findById(id);

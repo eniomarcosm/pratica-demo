@@ -1,6 +1,7 @@
 package com.unisced.evaluation.auth;
 
 
+import io.swagger.v3.oas.annotations.Operation;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -15,7 +16,7 @@ public class AuthenticationController {
 
     private final AuthenticationService authenticationService;
 
-
+    @Operation(summary = "Cadastrar usuário")
     @PostMapping("/register")
     public ResponseEntity<AuthenticationResponse> register(
             @RequestBody RegisterRequest request
@@ -23,11 +24,14 @@ public class AuthenticationController {
         return ResponseEntity.ok(authenticationService.register(request));
     }
 
+    @Operation(summary = "Autenticar usuário")
     @PostMapping("/authenticate")
     public ResponseEntity<AuthenticationResponse> register(
             @RequestBody AuthenticationRequest request
     ){
              return ResponseEntity.ok(authenticationService.authenticate(request));
     }
+
+
 
 }

@@ -2,27 +2,11 @@ server:
   port: 8080
 spring:
 ## Uncomment above code to use PostgreSQL
-#  datasource:
-#    url: jdbc:postgresql://localhost:5432/unisced
-#    username: postgres
-#    password: helloworld
-#    driver-class-name: org.postgresql.Driver
-#  jpa:
-#    hibernate:
-#      ddl-auto: update
-#    show-sql: true
-#    properties:
-#      hibernate:
-#        format_sql: true
-#    database: postgresql
-#    database-platform: org.hibernate.dialect.PostgreSQLDialect
-
-# Uncomment above code to use MySQl
   datasource:
-    url: jdbc:mysql://localhost:3306/unisced
-    username: root
-    password: ''
-    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:postgresql://localhost:5432/unisced
+    username: postgres
+    password: helloworld
+    driver-class-name: org.postgresql.Driver
   jpa:
     hibernate:
       ddl-auto: update
@@ -30,8 +14,24 @@ spring:
     properties:
       hibernate:
         format_sql: true
-    database: mysql
-    database-platform: org.hibernate.dialect.MySQLDialect
+    database: postgresql
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+
+# Uncomment above code to use MySQl
+#  datasource:
+#    url: jdbc:mysql://localhost:3306/unisced
+#    username: root
+#    password: ''
+#    driver-class-name: com.mysql.cj.jdbc.Driver
+#  jpa:
+#    hibernate:
+#      ddl-auto: create
+#    show-sql: true
+#    properties:
+#      hibernate:
+#        format_sql: true
+#    database: mysql
+#    database-platform: org.hibernate.dialect.MySQLDialect
 
 
 
