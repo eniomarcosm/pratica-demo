@@ -15,7 +15,7 @@ public class ProjectController {
 
     private final ProjectService projectService;
 
-    @Operation(summary = "Cadastrar de Projecto")
+    @Operation(summary = "Cadastrar Projecto")
     @PostMapping
     public ResponseEntity<?> save(
             @RequestBody ProjectRequest request
