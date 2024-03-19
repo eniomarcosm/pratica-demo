@@ -32,4 +32,5 @@ Para compilar e executar o projeto, siga estas etapas:
 4. Adicione o banco de dados "unisced" ao PostgreSQL e MySQL
 5. Compile o projeto: `mvn clean install`
 6. Execute o projeto: `mvn spring-boot:run`
+7. Import as rotas usando o postman no ficheiro ./Unisced Exame.postman_collection.json
 
