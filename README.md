@@ -28,9 +28,9 @@ Para começar com este projeto, você precisará ter o seguinte instalado em sua
 Para compilar e executar o projeto, siga estas etapas:
 1. Clone o repositório: `git clone https://github.com/eniomarcosm/pratica-demo.git`
 2. Navegue até o diretório do projeto: `cd pratica-demo`
-3. Abra o ficheiro src/resources/aplication.yaml e verifique as configurações
+3. Abra o ficheiro `src/resources/aplication.yaml` e verifique as configurações
 4. Adicione o banco de dados "unisced" ao PostgreSQL e MySQL
 5. Compile o projeto: `mvn clean install`
 6. Execute o projeto: `mvn spring-boot:run`
-7. Import as rotas usando o postman no ficheiro ./Unisced Exame.postman_collection.json
+7. Import as rotas usando o postman no ficheiro `./Unisced Exame.postman_collection.json`
 
