@@ -1,6 +1,10 @@
 
 
 # Implementação Restful API com Spring Boot, JWT e o Swagger-UI
+**Contact:** [mr.eniomarcos@gmail.com](mailto:mr.eniomarcos@gmail.com)
+**GitHub:** [eniomarcosm](https://github.com/eniomarcosm)
+**LinkedIn:** [eniomarcosm](https://www.linkedin.com/in/eniomarcosm/)
+
 
 Este projeto demonstra a implementação de segurança usando Spring Boot 3.2.3 e Tokens Web JSON (JWT). Ele inclui os seguintes recursos:
 
