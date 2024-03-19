@@ -12,7 +12,7 @@ Este projeto demonstra a implementação de segurança usando Spring Boot 3.0 e 
 - Criação, Actualização e Remoção de Projectos (com uso de token Barier)
 
 ## Tecnologias
-- Spring Boot 3.0
+- Spring Boot 3.2.3
 - Spring Security
 - Tokens Web JSON (JWT)
 - BCrypt
