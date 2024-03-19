@@ -1,6 +1,6 @@
 
 
-# Implementação Restful API com Spring Boot, JWT e o Swagger
+# Implementação Restful API com Spring Boot, JWT e o Swagger-UI
 
 Este projeto demonstra a implementação de segurança usando Spring Boot 3.2.3 e Tokens Web JSON (JWT). Ele inclui os seguintes recursos:
 
@@ -45,7 +45,7 @@ Siga estas etapas para compilar e executar o projeto:
 5. Configure o driver de banco de dados (MySQL e PostgreSQL).
 6. Esquema da string de conexão:`jdbc:dbengine://host:port/database` e caso de mudança do nome da base de dados subistitua no `database`
 7. Configure a porta e outros elementos do sistema
-8. Execute por meio de uma IDE ou;
+8. Execute por meio de uma IDE recomandações: `INTELLIJ ou VSCODE`; ou
 9. Compile o projeto: `mvn clean install` e execute o projeto: `mvn spring-boot:run`
 11. Importe as rotas usando o Postman no arquivo `./Unisced Exame.postman_collection.json` ou siga os passos na secção seguinte para usar o SWAGGER.
 
