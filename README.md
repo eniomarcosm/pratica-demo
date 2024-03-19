@@ -1,6 +1,6 @@
 # Implementação RestfulApi com Spring Boot 3.0 e JWT
 
-Este projeto demonstra a implementação de segurança usando Spring Boot 3.0 e Tokens Web JSON (JWT). Ele inclui os seguintes recursos:
+Este projeto demonstra a implementação de segurança usando Spring Boot 3.2.3 e Tokens Web JSON (JWT). Ele inclui os seguintes recursos:
 
 ## Recursos
 - Registro e login de usuário com autenticação JWT
